@@ -100,7 +100,7 @@ element = int(c_n) # ищем его место в  списке
 left = 0
 right = len(l_n)-1
 
-ind = binary_search (array, element, left, right) # вызов поиска двоичного поиска
+ind = binary_search (array, element, left, right) # вызов двоичного поиска
 
 print ('Поиск индекса элемента в списке')
 for i in range(len(array)):
