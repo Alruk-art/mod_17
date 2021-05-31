@@ -5,13 +5,14 @@ def list_numb():
         l_n = input('Введите несколько целых чисел через пробел: ')
         try:
             l_n = list(map(int, l_n.split()))
-            if len(l_n) == 1:
-                print('список короткий')
-                raise ValueError
+            if len(l_n) > 1:
+                break
+            print('список короткий')
+                #raise ValueError
         except ValueError:
             print("Неверный формат данных")
-        else:
-            break
+        #else:
+            #break
     return l_n
 def ch_num():
     while True:
