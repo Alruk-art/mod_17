@@ -25,12 +25,14 @@ def ch_num():
 
 def metod():
     while True:
-        ms = input ("1- метод быстрой сортировки, 2 - метод сортировки вставками ")
+        ms = input ("1- метод быстрой сортировки, 0 - метод сортировки вставками ")
         try:
             ms = int(ms)
-            break
+            if ms == 1 or ms == 0:
+                break
+            print ("Не выбран метод")
         except ValueError as e:
-            print(f'Значение {ms} содержит недопустимые символы')
+            print("Выберите метод сортировки 1 или 0")
     return ms
 # метод сортировки вставками
 def list_sort(l_n):
